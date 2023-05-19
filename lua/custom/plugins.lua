@@ -42,10 +42,10 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
-  -- Install a plugin
   {
     "ThePrimeagen/harpoon"
   },
+  {"natecraddock/sessions.nvim"},
   {
     "ThePrimeagen/vim-be-good",
     lazy = false,
