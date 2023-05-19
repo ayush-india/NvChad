@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -12,7 +12,7 @@ local plugins = {
       {
         "jose-elias-alvarez/null-ls.nvim",
         config = function()
-          require("custom.configs.null-ls")
+          require "custom.configs.null-ls"
         end,
       },
       {
@@ -23,10 +23,10 @@ local plugins = {
           vim.api.nvim_create_user_command("MasonInstallAll", function()
             vim.cmd("MasonInstall " .. table.concat(opts.ensure_installed, " "))
           end, {})
-          require("custom.configs.lspconfig") -- Load in lsp config
+          require "custom.configs.lspconfig" -- Load in lsp config
         end,
       },
-      "williamboman/mason-lspconfig.nvim"
+      "williamboman/mason-lspconfig.nvim",
     },
     config = function() end, -- Override to setup mason-lspconfig
   },
@@ -43,9 +43,9 @@ local plugins = {
   },
 
   {
-    "ThePrimeagen/harpoon"
+    "ThePrimeagen/harpoon",
   },
-  {"natecraddock/sessions.nvim"},
+  { "natecraddock/sessions.nvim" },
   {
     "ThePrimeagen/vim-be-good",
     lazy = false,
