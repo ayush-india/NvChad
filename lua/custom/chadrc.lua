@@ -23,7 +23,7 @@ M.ui = {
   },
 
   telescope = {
-    style = "bordered", -- borderless / bordered
+    style = "borderless", -- borderless / bordered
   },
 }
 
