@@ -18,10 +18,10 @@ M.general = {
     ["jk"] = { "<ESC>", "escape insert mode", opts = { nowait = true } },
   },
   n = {
-    -- Git
-    ["<leader>gs"] = {
+    ------------------------------------------ Git ------------------------------------------
+    ["<leader>gu"] = {
       function()
-        require("gitsigns").stage_hunk()
+        require("gitsigns").undo_stage_hunk()
       end,
       "Stage hunk",
     },
@@ -43,19 +43,29 @@ M.general = {
       end,
       "Reset hunk",
     },
+    ["<leader>gd"] = {
+      function()
+        require("gitsigns").diffthis()
+      end,
+      "Preview hunk",
+    },
     ["<leader>gh"] = {
       function()
         require("gitsigns").preview_hunk()
       end,
       "Preview hunk",
     },
-    -- Diagnostics
+    ------------------------------------------ Diagnostics ------------------------------------------
     ["t"] = { "<cmd>:Trouble document_diagnostics <CR>", "Trouble", opts = { nowait = true } },
     ["T"] = { "<cmd>:Trouble workspace_diagnostics <CR>", "Trouble", opts = { nowait = true } },
-    -- Nav
+    ------------------------------------------ Projects ------------------------------------------
+
+
+
+    ------------------------------------------  Nav------------------------------------------
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
-    -- Tab switching
+    ------------------------------------------ Tab switching ------------------------------------------
     ["<S-l>"] = {
       function()
         require("nvchad_ui.tabufline").tabuflineNext()
@@ -78,7 +88,7 @@ M.general = {
       "lsp formatting",
     },
 
-    -- Harpoon :)
+    ------------------------------------------ Harpoon  ------------------------------------------
     ["<leader>a"] = {
       function()
         require("harpoon.mark").add_file()
