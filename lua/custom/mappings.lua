@@ -19,6 +19,12 @@ M.general = {
   },
   n = {
     ------------------------------------------ Git ------------------------------------------
+    ["<leader>gs"] = {
+      function()
+        require("gitsigns").stage_hunk()
+      end,
+      "Stage hunk",
+    },
     ["<leader>gu"] = {
       function()
         require("gitsigns").undo_stage_hunk()
