@@ -45,10 +45,15 @@ local plugins = {
   {
     "ThePrimeagen/harpoon",
   },
-  { "natecraddock/sessions.nvim" },
+  { "ahmedkhalf/project.nvim",
+
+    config = function ()
+      require "custom.configs.project"
+    end
+
+  },
   {
     "ThePrimeagen/vim-be-good",
-    lazy = false,
   },
 
   "folke/trouble.nvim",
