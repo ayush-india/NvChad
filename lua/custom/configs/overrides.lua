@@ -29,11 +29,10 @@ M.mason = {
     "rust-analyzer",
     "rustfmt",
 
-    -- web dev stuff
-    -- "css-lsp",
-    -- "html-lsp",
-    -- "typescript-language-server",
-    -- "deno",
+    --python 
+    "ruff",
+    "ruff_lsp",
+    "black",
   },
 }
 
