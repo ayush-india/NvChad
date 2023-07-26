@@ -5,5 +5,5 @@ ftplugin
 syntax
 coc-settings.json
 .luarc.json
-
-.github
+lazy-lock.json
+after
