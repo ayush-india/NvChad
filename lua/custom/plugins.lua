@@ -42,6 +42,10 @@ local plugins = {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = overrides.mason,
+  },
 
   {
     "ThePrimeagen/harpoon",

@@ -30,9 +30,14 @@ M.mason = {
     "rustfmt",
 
     --python 
+    "pyright",
     "ruff",
-    "ruff_lsp",
+    "mypy",
     "black",
+
+    -- old man stuff
+    "clang-format",
+    "clangd",
   },
 }
 
