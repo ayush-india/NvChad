@@ -32,7 +32,6 @@ M.mason = {
     --python 
     "pyright",
     "ruff",
-    "mypy",
     "black",
 
     -- old man stuff
