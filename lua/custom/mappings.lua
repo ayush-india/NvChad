@@ -72,18 +72,21 @@ M.general = {
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
     ------------------------------------------ Tab switching ------------------------------------------
-    ["<S-l>"] = {
-      function()
-        require("nvchad_ui.tabufline").tabuflineNext()
-      end,
-      "goto next buffer",
-    },
-    ["<S-h>"] = {
-      function()
-        require("nvchad_ui.tabufline").tabuflinePrev()
-      end,
-      "goto prev buffer",
-    },
+    ["<S-l>"] = {"<cmd>bn <CR>"},
+    ["<S-h>"] = {"<cmd>bp <CR>"},
+    -- idk what has happende
+    -- ["<S-l>"] = {
+    --   function()
+    --     require("nvchad_ui.tabufline").tabuflineNext()
+    --   end,
+    --   "goto next buffer",
+    -- },
+    -- ["<S-h>"] = {
+    --   function()
+    --     require("nvchad_ui.tabufline").tabuflinePrev()
+    --   end,
+    --   "goto prev buffer",
+    -- },
     -- Formatting
     -- ["<leader>fm"] = { "<cmd>:Neoformat<CR>", "format the current file" },
 
