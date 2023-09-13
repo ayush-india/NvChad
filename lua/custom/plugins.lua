@@ -1,5 +1,4 @@
 local overrides = require "custom.configs.overrides"
-local telescope = require("telescope")
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -47,25 +46,8 @@ local plugins = {
     opts = overrides.mason,
   },
 
-  {
-    "ThePrimeagen/harpoon",
-  },
-  {
-    "ahmedkhalf/project.nvim",
+  "ThePrimeagen/harpoon",
 
-    config = function()
-      require("project_nvim").setup {
-        require "custom.configs.project",
-      }
-    end,
-  },
-  {
-    "nvim-telescope/telescope.nvim",
-    config = function()
-      telescope.load_extension('projects')
-      telescope.extensions.projects.projects{}
-    end,
-  },
   "ThePrimeagen/vim-be-good",
 
   "folke/trouble.nvim",

@@ -65,7 +65,6 @@ M.general = {
     ["t"] = { "<cmd>:Trouble document_diagnostics <CR>", "Trouble", opts = { nowait = true } },
     ["T"] = { "<cmd>:Trouble workspace_diagnostics <CR>", "Trouble", opts = { nowait = true } },
     ------------------------------------------ Telescope ------------------------------------------
-    ["<leader>fp"] = { "<cmd> Telescope projects <CR>", "Find projects dir" },
 
 
     ------------------------------------------  Nav------------------------------------------
