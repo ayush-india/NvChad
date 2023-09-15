@@ -20,8 +20,8 @@ local options = {
     layout_config = {
       horizontal = {
         prompt_position = "top",
-        preview_width = 0.75,
-        results_width = 0.8,
+        preview_width = 0.65,
+        results_width = 0.75,
       },
       vertical = {
         mirror = false,
