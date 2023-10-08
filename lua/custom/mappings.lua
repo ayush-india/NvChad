@@ -29,7 +29,7 @@ M.general = {
       function()
         require("gitsigns").undo_stage_hunk()
       end,
-      "Stage hunk",
+      "Undo Stage hunk",
     },
     ["<leader>gS"] = {
       function()
