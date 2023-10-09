@@ -46,23 +46,10 @@ local plugins = {
     opts = overrides.mason,
   },
 
+  { "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }, },
   "ThePrimeagen/harpoon",
 
   "ThePrimeagen/vim-be-good",
-
-  "folke/trouble.nvim",
-
-  -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
-
-  -- Uncomment if you want to re-enable which-key
-  -- {
-  --   "folke/which-key.nvim",
-  --   enabled = true,
-  -- },
 }
 
 return plugins

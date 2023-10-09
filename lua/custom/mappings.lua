@@ -62,17 +62,38 @@ M.general = {
       "Preview hunk",
     },
     ------------------------------------------ Diagnostics ------------------------------------------
-    ["t"] = { "<cmd>:Trouble document_diagnostics <CR>", "Trouble", opts = { nowait = true } },
-    ["T"] = { "<cmd>:Trouble workspace_diagnostics <CR>", "Trouble", opts = { nowait = true } },
+    ["t"] = {
+      function()
+        require("trouble").open()
+      end,
+      "Trouble",
+    },
+    ["T"] = {
+      function()
+        require("trouble").open "workspace_diagnostics"
+      end,
+      "Trouble workspace diagnostics",
+    },
+    ["<leader>tq"] = {
+      function()
+        require("trouble").open "quickfix"
+      end,
+      "Trouble quickfix",
+    },
+    ["<leader>tr"] = {
+      function()
+        require("trouble").open "lsp_references"
+      end,
+      "Trouble references",
+    },
     ------------------------------------------ Telescope ------------------------------------------
-
 
     ------------------------------------------  Nav------------------------------------------
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
     ------------------------------------------ Tab switching ------------------------------------------
-    ["<S-l>"] = {"<cmd>bn <CR>"},
-    ["<S-h>"] = {"<cmd>bp <CR>"},
+    ["<S-l>"] = { "<cmd>bn <CR>" },
+    ["<S-h>"] = { "<cmd>bp <CR>" },
     -- idk what has happende
     -- ["<S-l>"] = {
     --   function()
@@ -96,7 +117,7 @@ M.general = {
       "lsp formatting",
     },
 
-    ------------------------------------------ Harpoon  ------------------------------------------
+    ------------------------------------------ Hrequire("trouble").open()require("trouble").open()arpoon  ------------------------------------------
     ["<leader>a"] = {
       function()
         require("harpoon.mark").add_file()
@@ -107,7 +128,7 @@ M.general = {
       function()
         require("harpoon.ui").toggle_quick_menu()
       end,
-      "Har menu",
+      "har menu",
     },
     ["<C-h>"] = {
       function()
