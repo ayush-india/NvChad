@@ -1,9 +1,9 @@
 local M = {}
 
 M.ui = {
-  theme = "gruvchad",
+  theme = "tokyodark",
   transparency = false,
-  theme_toggle = { "gruvchad", "gruvchad" },
+  theme_toggle = { "tokyodark", "tokyodark" },
 
   -- cmp themeing
   cmp = {

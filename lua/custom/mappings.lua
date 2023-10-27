@@ -64,7 +64,7 @@ M.general = {
     ------------------------------------------ Diagnostics ------------------------------------------
     ["t"] = {
       function()
-        require("trouble").open()
+        require("trouble").open "document_diagnostics"
       end,
       "Trouble",
     },
