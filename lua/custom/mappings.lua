@@ -64,13 +64,13 @@ M.general = {
     ------------------------------------------ Diagnostics ------------------------------------------
     ["t"] = {
       function()
-        require("trouble").open "document_diagnostics"
+        require("trouble").toggle "document_diagnostics"
       end,
       "Trouble",
     },
     ["T"] = {
       function()
-        require("trouble").open "workspace_diagnostics"
+        require("trouble").toggle "workspace_diagnostics"
       end,
       "Trouble workspace diagnostics",
     },
