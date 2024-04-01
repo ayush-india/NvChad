@@ -5,7 +5,7 @@ local i = ls.insert_node
 ls.add_snippets("all", {
   s("compe", {
     t({"#define ll long long" }),
-    t({"", "#define l long double" }),
+    t({"", "#define ld long double" }),
     t({"", "#include <bits/stdc++.h>" }),
     t({"", "#include <vector>" }),
     t({"", "using namespace std;"}),
