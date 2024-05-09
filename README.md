@@ -3,7 +3,7 @@
 
 Steps to reproduce my repo 
 
-bro work check new pc
+stwich to g++ 12 for no error in nvim
 0. Rename all these dirs 
 $HOME/.config/nvim to $HOME/.cofig/nvim.bak
 $HOME/.cache/nvim to $HOME/.cache/nvim.bak
