@@ -42,6 +42,7 @@ M.ui = {
 }
 vim.cmd [[
 nnoremap cpp :terminal g++ -std=c++17 % -o %:r && ./%:r<CR>
+nnoremap cp :terminal ./%:r<CR>
 ]]
 M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
