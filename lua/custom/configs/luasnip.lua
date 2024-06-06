@@ -3,10 +3,11 @@ local s = ls.snippet
 local t = ls.text_node
 local i = ls.insert_node
 ls.add_snippets("all", {
-  s("compe", {
+  s("cpp", {
     t({"#define ll long long" }),
     t({"", "#define ld long double" }),
     t({"", "#include <bits/stdc++.h>" }),
+    t({"", "#include <algorithm>" }),
     t({"", "#include <vector>" }),
     t({"", "using namespace std;"}),
     t({"", "void solve() {"}),
