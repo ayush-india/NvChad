@@ -15,7 +15,7 @@ local plugins = {
         opts = { history = true, updateevents = "TextChanged,TextChangedI" },
         config = function(_, opts)
           require("plugins.configs.others").luasnip(opts)
-          require("custom.configs.luasnip")
+          require "custom.configs.luasnip"
         end,
       },
 
@@ -94,11 +94,24 @@ local plugins = {
     opts = overrides.mason,
   },
 
-  
-  { "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }, },
+  { "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
   "ThePrimeagen/harpoon",
 
   "ThePrimeagen/vim-be-good",
+
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup {
+        transparent_background = true,
+      }
+      vim.cmd.colorscheme "catppuccin"
+    end,
+  },
+
   -- Lua
   {
     "folke/zen-mode.nvim",
@@ -140,15 +153,12 @@ local plugins = {
           gitsigns = { enabled = false }, -- disables git signs
           tmux = { enabled = true },      -- disables the tmux statusline
           -- callback where you can add custom code when the Zen window opens
-          on_open = function(win)
-          end,
+          on_open = function(win) end,
           -- callback where you can add custom code when the Zen window closes
-          on_close = function()
-          end,
-        }
-
-      }
-    }
-  }
+          on_close = function() end,
+        },
+      },
+    },
+  },
 }
 return plugins
