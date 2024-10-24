@@ -1,6 +1,5 @@
 [Official reop](https://github.com/NvChad/NvChad)
 
-
 Steps to reproduce my repo 
 
 stwich to g++ 12 for no error in nvim
