@@ -9,8 +9,8 @@ M.ui = {
   cmp = {
     icons = false,
     lspkind_text = true,
-    style = "flat_dark", -- default/flat_light/flat_dark/atom/atom_colored
-    border_color = "grey_fg", -- only applicable for "default" style, use color names from base30 variables
+    style = "flat_dark",         -- default/flat_light/flat_dark/atom/atom_colored
+    border_color = "grey_fg",    -- only applicable for "default" style, use color names from base30 variables
     selected_item_bg = "simple", -- colored / simple
   },
 
@@ -33,29 +33,43 @@ M.ui = {
     lazyload = true,
     overriden_modules = nil,
   },
-
   nvdash = {
     load_on_startup = true,
-
     header = {
-      "           ▄ ▄                   ",
-      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
-      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
-      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
-      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
-      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
-      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
-      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
-      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+      "                            ",
+      "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
+      "   ▄▀███▄     ▄██ █████▀    ",
+      "   ██▄▀███▄   ███           ",
+      "   ███  ▀███▄ ███           ",
+      "   ███    ▀██ ███           ",
+      "   ███      ▀ ███           ",
+      "   ▀██ █████▄▀█▀▄██████▄    ",
+      "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
+      "                            ",
+      "     Powered By  eovim    ",
+      "                            ",
     },
-    buttons = {
-      { "  Find File", "Spc f f", "Telescope find_files" },
-      { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
-      { "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
-      { "  Bookmarks", "Spc m a", "Telescope marks" },
-      { "  Themes", "Spc t h", "Telescope themes" },
-      { "  Mappings", "Spc c h", "NvCheatsheet" },
-    },
+
+    -- buttons = {
+    --   { txt = "  Find File", keys = "ff", cmd = "Telescope find_files" },
+    --   { txt = "  Recent Files", keys = "fo", cmd = "Telescope oldfiles" },
+    --   { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
+    --   { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
+    --   { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
+    --
+    --   { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
+    --   {
+    --     txt = function()
+    --       local stats = require("lazy").stats()
+    --       local ms = math.floor(stats.startuptime) .. " ms"
+    --       return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
+    --     end,
+    --     hl = "NvDashFooter",
+    --     no_gap = true,
+    --   },
+    --
+    --   { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
+    -- },
   },
 
   lsp = {
