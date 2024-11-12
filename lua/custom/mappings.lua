@@ -63,13 +63,13 @@ M.general = {
     ------------------------------------------ Diagnostics ------------------------------------------
     ["t"] = {
       function()
-        require("trouble").toggle "document_diagnostics"
+        require("trouble").toggle "diagnostics"
       end,
       "Trouble",
     },
     ["T"] = {
       function()
-        require("trouble").toggle "workspace_diagnostics"
+        require("trouble").toggle "fzf_files"
       end,
       "Trouble workspace diagnostics",
     },
@@ -81,7 +81,7 @@ M.general = {
     },
     ["<leader>tr"] = {
       function()
-        require("trouble").open "lsp_references"
+        require("trouble").open "lsp"
       end,
       "Trouble references",
     },

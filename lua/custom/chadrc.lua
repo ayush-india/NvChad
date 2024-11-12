@@ -1,8 +1,8 @@
 local M = {}
 
 M.ui = {
-  theme = "catppuccin",
-  transparency = true,
+  theme = "one_light",
+  transparency = false,
   lsp_semantic_tokens = true, -- needs nvim v0.9, just adds highlight groups for lsp semantic tokens
 
   -- cmp themeing
