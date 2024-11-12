@@ -62,27 +62,19 @@ M.general = {
     },
     ------------------------------------------ Diagnostics ------------------------------------------
     ["t"] = {
-      function()
-        require("trouble").toggle "diagnostics"
-      end,
+      "<cmd>:Trouble diagnostics toggle filter.buf=0<cr>",
       "Trouble",
     },
     ["T"] = {
-      function()
-        require("trouble").toggle "fzf_files"
-      end,
+      "<cmd>:Trouble diagnostics toggle<cr>",
       "Trouble workspace diagnostics",
     },
     ["<leader>tq"] = {
-      function()
-        require("trouble").open "quickfix"
-      end,
+      "<cmd>:Trouble qflist toggle<cr>",
       "Trouble quickfix",
     },
     ["<leader>tr"] = {
-      function()
-        require("trouble").open "lsp"
-      end,
+      "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
       "Trouble references",
     },
     ------------------------------------------ Telescope ------------------------------------------
