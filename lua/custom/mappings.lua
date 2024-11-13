@@ -17,6 +17,12 @@ M.general = {
     ["jk"] = { "<ESC>", "escape insert mode", opts = { nowait = true } },
   },
   n = {
+    ["<leader>tT"] = {
+      function()
+        require("base46").toggle_transparency()
+      end,
+      "Toggle transparency",
+    },
     ------------------------------------------ Git ------------------------------------------
     ["<leader>gs"] = {
       function()
