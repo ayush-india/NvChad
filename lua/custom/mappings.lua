@@ -61,30 +61,30 @@ M.general = {
       "Preview hunk",
     },
     ------------------------------------------ Diagnostics ------------------------------------------
-    ["t"] = {
-      function()
-        require("trouble").toggle "diagnostics"
-      end,
-      "Trouble",
-    },
-    ["T"] = {
-      function()
-        require("trouble").toggle "fzf_files"
-      end,
-      "Trouble workspace diagnostics",
-    },
-    ["<leader>tq"] = {
-      function()
-        require("trouble").open "quickfix"
-      end,
-      "Trouble quickfix",
-    },
-    ["<leader>tr"] = {
-      function()
-        require("trouble").open "lsp"
-      end,
-      "Trouble references",
-    },
+    -- ["t"] = {
+    --   function()
+    --     require("trouble").toggle("diagnostics")
+    --   end,
+    --   "Trouble",
+    -- },
+    -- ["T"] = {
+    --   function()
+    --     require("trouble").toggle("")
+    --   end,
+    --   "Trouble workspace diagnostics",
+    -- },
+    -- ["<leader>tq"] = {
+    --   function()
+    --     require("trouble").open "quickfix"
+    --   end,
+    --   "Trouble quickfix",
+    -- },
+    -- ["<leader>tr"] = {
+    --   function()
+    --     require("trouble").open "lsp"
+    --   end,
+    --   "Trouble references",
+    -- },
     ------------------------------------------ Telescope ------------------------------------------
 
     ------------------------------------------  Nav------------------------------------------
