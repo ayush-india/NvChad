@@ -61,22 +61,30 @@ M.general = {
       "Preview hunk",
     },
     ------------------------------------------ Diagnostics ------------------------------------------
-    ["t"] = {
-      "<cmd>:Trouble diagnostics toggle filter.buf=0<cr>",
-      "Trouble",
-    },
-    ["T"] = {
-      "<cmd>:Trouble diagnostics toggle<cr>",
-      "Trouble workspace diagnostics",
-    },
-    ["<leader>tq"] = {
-      "<cmd>:Trouble qflist toggle<cr>",
-      "Trouble quickfix",
-    },
-    ["<leader>tr"] = {
-      "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
-      "Trouble references",
-    },
+    -- ["t"] = {
+    --   function()
+    --     require("trouble").toggle("diagnostics")
+    --   end,
+    --   "Trouble",
+    -- },
+    -- ["T"] = {
+    --   function()
+    --     require("trouble").toggle("")
+    --   end,
+    --   "Trouble workspace diagnostics",
+    -- },
+    -- ["<leader>tq"] = {
+    --   function()
+    --     require("trouble").open "quickfix"
+    --   end,
+    --   "Trouble quickfix",
+    -- },
+    -- ["<leader>tr"] = {
+    --   function()
+    --     require("trouble").open "lsp"
+    --   end,
+    --   "Trouble references",
+    -- },
     ------------------------------------------ Telescope ------------------------------------------
 
     ------------------------------------------  Nav------------------------------------------
